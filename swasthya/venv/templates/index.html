@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swasthya - Mental Health Support Network</title>
+    <link rel="stylesheet" href="{{url_for('static', filename ='styles.css')}}">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="{{url_for('static', filename = 'styles.css')}}" alt="Swasthya Logo" class="logo-image">
+            </div>
+            <div class="nav-links">
+                <a href="login.html" class="btn-login">Login</a>
+                <a href="signup.html" class="btn-signup">Sign Up</a>
+            </div>
+        </nav>
+        <div class="hero">
+            <h1>Your Safe Space for Mental Wellness</h1>
+            <p>Join our supportive community and take control of your mental health journey</p>
+            <a href="signup.html" class="cta-button">Get Started</a>
+        </div>
+    </header>
+
+    <main>
+        <section class="features">
+            <h2>How We Support You</h2>
+            <div class="features-grid">
+            <a href="#peer-support" class="feature-link">
+                <div class="feature-card">
+                    <i class="fas fa-users"></i>
+                    <h3>Peer Support Groups</h3>
+                    <p>Connect with others who understand your experience</p>
+                </div>
+            </a>
+            
+            <a href="#real-time support" class="feature-link">
+                <div class="feature-card">
+                    <i class="fas fa-comments"></i>
+                    <h3>Real-Time Support</h3>
+                    <p>Chat and engage in supportive discussions</p>
+                </div>
+            </a>
+            
+            <a href="resource-library.html" class="feature-link">
+                <div class="feature-card">
+                    <i class="fas fa-book-medical"></i>
+                    <h3>Resource Library</h3>
+                    <p>Access curated mental health resources</p>
+                </div>
+            </a>
+                
+            </div>
+        </section>
+
+        <section class="tracker-preview">
+            <h2>Track Your Mental Health Journey</h2>
+            <div class="tracker-grid">
+                <div class="tracker-info">
+                    <h3>Personal Mood Tracker</h3>
+                    <ul>
+                        <li><i class="fas fa-check"></i> Daily mood logging</li>
+                        <li><i class="fas fa-check"></i> Identify triggers</li>
+                        <li><i class="fas fa-check"></i> Track progress</li>
+                        <li><i class="fas fa-check"></i> Get personalized insights</li>
+                    </ul>
+                    <a href="#" class="secondary-button">Try Mood Tracker</a>
+                </div>
+                <div class="tracker-image">
+                    <img src="/api/placeholder/400/300" alt="Mood tracking interface preview">
+                </div>
+            </div>
+        </section>
+
+        <!-- <section class="emergency-support">
+            <h2>24/7 Emergency Support</h2>
+            <div class="emergency-container">
+                <div class="emergency-card">
+                    <i class="fas fa-phone"></i>
+                    <h3>Crisis Hotline</h3>
+                    <p>1-800-273-8255</p>                                       
+                    <a href="#" class="emergency-button">Call Now</a>
+                </div>
+                <div class="emergency-card">
+                    <i class="fas fa-comment-dots"></i>
+                    <h3>Crisis Text Line</h3>
+                    <p>Text HOME to 741741</p>
+                    <a href="#" class="emergency-button">Text Now</a>
+                </div>
+            </div>
+        </section> -->
+        
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Swasthya</h4>
+                <p>Supporting mental wellness together</p>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="customer_support.html">Customer Support</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Connect With Us</h4>
+                <div class="social-links">
+                    <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook"></i></a>
+                    <a href="https://x.com/home"target="_blank"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.instagram.com/aayushsamal16"target="_blank"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Swasthya. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

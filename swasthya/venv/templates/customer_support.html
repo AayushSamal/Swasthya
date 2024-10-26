@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Support - Swasthya</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="customer_support.css">
+</head>
+<body>
+    <!-- Previous header and content remains the same -->
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="logo.png" alt="Swasthya Logo" class="logo-image">
+            </div>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="login.html">Login</a>
+            </div>
+        </nav>
+    </header>
+
+    <div class="support-container">
+        <div class="search-box">
+            <input type="text" placeholder="Search for help...">
+        </div>
+
+        <section class="support-section">
+            <h2>Common Technical Issues</h2>
+            
+            <div class="tech-issue">
+                <h3>Can't Log In?</h3>
+                <ul class="steps">
+                    <li>Check if your email address is typed correctly</li>
+                    <li>Make sure Caps Lock is off</li>
+                    <li>Click "Forgot Password" to reset your password</li>
+                    <li>Clear your browser cache and cookies</li>
+                </ul>
+            </div>
+
+            <div class="tech-issue">
+                <h3>App Not Loading?</h3>
+                <ul class="steps">
+                    <li>Check your internet connection</li>
+                    <li>Refresh the page</li>
+                    <li>Try using a different browser</li>
+                    <li>Clear your browser cache</li>
+                </ul>
+            </div>
+
+            <div class="tech-issue">
+                <h3>Mood Tracker Not Working?</h3>
+                <ul class="steps">
+                    <li>Make sure you're logged in</li>
+                    <li>Check if you've reached the daily entry limit</li>
+                    <li>Try refreshing the page</li>
+                    <li>Update your browser to the latest version</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="support-section">
+            <h2>Frequently Asked Questions</h2>
+            
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>How do I change my password?</h3>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    Go to Settings > Security > Change Password. Enter your current password and then your new password twice to confirm.
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>How do I update my profile information?</h3>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    Click on your profile picture > Edit Profile. Here you can update your personal information, preferences, and privacy settings.
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>How do I join or leave a support group?</h3>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    To join: Go to Groups > Browse Groups > Join Group
+                    To leave: Go to My Groups > Select Group > Click Leave Group
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- New Chat Widget -->
+    <div class="chat-widget">
+        <div class="chat-button" onclick="toggleChat()">
+            <i class="fas fa-comments fa-lg"></i>
+        </div>
+        
+        <div class="chat-window" id="chatWindow">
+            <div class="chat-header">
+                <div class="chat-status">
+                    <div class="status-dot"></div>
+                    <span>Support: </span>
+                </div>
+                <i class="fas fa-times" onclick="toggleChat()"></i>
+            </div>
+            <div class="chat-body">
+                <div class="chat-message support">
+                    Hello! How can we help you today?
+                </div>
+            </div>
+            <div class="chat-input">
+                <input type="text" placeholder="Type your message...">
+                <button><i class="fas fa-paper-plane"></i></button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function toggleChat() {
+            const chatWindow = document.getElementById('chatWindow');
+            chatWindow.style.display = chatWindow.style.display === 'none' || chatWindow.style.display === '' ? 'flex' : 'none';
+        }
+    </script>
+</body>
+</html>

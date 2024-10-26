@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resource Library - Swasthya</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="resource-library.css">
+</head>
+<body>
+    <section class="resource-library">
+        <div class="resource-header">
+            <h2>Resource Library</h2>
+            <p>Explore our curated collection of mental health resources, guides, and tools to support your wellness journey.</p>
+        </div>
+
+        <div class="search-filter-section">
+            <div class="search-bar">
+                <i class="fas fa-search"></i>
+                <input type="text" placeholder="Search resources...">
+            </div>
+            <div class="category-filters">
+                <button class="category-filter active">All</button>
+                <button class="category-filter">Articles</button>
+                <button class="category-filter">Videos</button>
+                <button class="category-filter">Guides</button>
+                <button class="category-filter">Tools</button>
+            </div>
+        </div>
+
+        <div class="resources-grid">
+            <!-- Article Resource -->
+            <div class="resource-card">
+                <div class="resource-image">
+                    <i class="fas fa-book-open"></i>
+                </div>
+                <div class="resource-content">
+                    <div class="resource-type">Book</div>
+                    <h3 class="resource-title"> Solitude: A Return to Self by Anthony Storr</h3>
+                    <p class="resource-description">Explores the enriching power of solitude, emphasizing its essential role in personal growth and creativity</p>
+                    <div class="resource-meta">
+                        <span>15 min read</span>
+                        <a href="https://www.amazon.in/Solitude-Return-Self-Anthony-Storr/dp/0743280741" class="read-more">Read More →</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Video Resource -->
+            <div class="resource-card">
+                <div class="resource-image">
+                    <i class="fas fa-video"></i>
+                </div>
+                <div class="resource-content">
+                    <div class="resource-type">Video</div>
+                    <h3 class="resource-title">Meditation for Beginners</h3>
+                    <p class="resource-description">A step-by-step guide to starting your meditation practice, with simple techniques for stress relief</p>
+                    <div class="resource-meta">
+                        <span>10 min watch</span>
+                        <a href="https://www.youtube.com/watch?v=U9YKY7fdwyg" class="read-more">Watch Now →</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Guide Resource -->
+            <div class="resource-card">
+                <div class="resource-image">
+                    <i class="fas fa-file-alt"></i>
+                </div>
+                <div class="resource-content">
+                    <div class="resource-type">Guide</div>
+                    <h3 class="resource-title">Building Healthy Sleep Habits</h3>
+                    <p class="resource-description">Practical tips and strategies for improving your sleep quality and maintaining a healthy sleep schedule</p>
+                    <div class="resource-meta">
+                        <span>12 min read</span>
+                        <a href="https://www.healthline.com/health/sleep-hygiene" class="read-more">Read More →</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tool Resource -->
+            <div class="resource-card">
+                <div class="resource-image">
+                    <i class="fas fa-tools"></i>
+                </div>
+                <div class="resource-content">
+                    <div class="resource-type">Tool</div>
+                    <h3 class="resource-title">Stress Management Worksheet</h3>
+                    <p class="resource-description">Interactive worksheet to help identify stress triggers and develop personalized coping strategies</p>
+                    <div class="resource-meta">
+                        <span>Interactive</span>
+                        <a href="https://safespot.org.uk/wp-content/uploads/2016/05/workbook1.compressed.pdf" class="read-more">Try Now →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        // Add click handlers for category filters
+        const filters = document.querySelectorAll('.category-filter');
+        filters.forEach(filter => {
+            filter.addEventListener('click', () => {
+                filters.forEach(f => f.classList.remove('active'));
+                filter.classList.add('active');
+            });
+        });
+    </script>
+</body>
+</html>

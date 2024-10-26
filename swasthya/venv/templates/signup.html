@@ -1,0 +1,77 @@
+<!-- signup.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up - Swasthya Mental Health Support Network</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="signup.css">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <nav>
+        <a href="index.html">
+            <img src="logo.png" alt="Swasthya Logo" class="logo-image">
+        </a>
+    </nav>
+
+    <div class="signup-container">
+        <div class="signup-card">
+            <h1>Join Swasthya</h1>
+            <p class="signup-subtitle">Create your account to start your wellness journey</p>
+            
+            <form action="#" method="POST">
+                <div class="name-fields">
+                    <div class="form-group">
+                        <label for="firstName">First Name</label>
+                        <input type="text" id="firstName" name="firstName" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="lastName">Last Name</label>
+                        <input type="text" id="lastName" name="lastName" required>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" required>
+                    <div class="password-requirements">
+                        <p>Password must contain:</p>
+                        <ul>
+                            <li><i class="fas fa-check-circle"></i> At least 8 characters</li>
+                            <li><i class="fas fa-check-circle"></i> One uppercase letter</li>
+                            <li><i class="fas fa-check-circle"></i> One number</li>
+                            <li><i class="fas fa-check-circle"></i> One special character</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="confirmPassword">Confirm Password</label>
+                    <input type="password" id="confirmPassword" name="confirmPassword" required>
+                </div>
+
+                <div class="terms-privacy">
+                    <input type="checkbox" id="terms" name="terms" required>
+                    <label for="terms">
+                        I agree to the <a href="#">Terms of Service</a> and <a href="#">Privacy Policy</a>
+                    </label>
+                </div>
+
+                <button type="submit" class="signup-button">Create Account</button>
+            </form>
+
+            <div class="login-prompt">
+                Already have an account? <a href="login.html">Log in</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
